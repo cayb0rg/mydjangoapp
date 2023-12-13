@@ -1,0 +1,6 @@
+asgiref==3.7.2
+Django==4.2.7
+meson==1.0.0
+sqlparse==0.4.4
+mysqlclient==2.2.0
+mysql-connector-python==8.0.12
