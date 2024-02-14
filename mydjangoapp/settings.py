@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions', # A session framework
     'django.contrib.messages', # A messaging framework
     'django.contrib.staticfiles', # A framework for managing static files
-    'polls.apps.PollsConfig', # The polls app
+    'polls.apps.PollsConfig', # The polls app,
+    'django_extensions', # django-extensions is a collection of custom extensions for the Django Framework
 ]
 
 MIDDLEWARE = [
@@ -84,6 +85,9 @@ DATABASES = {
         'HOST': 'db',
         'PORT': '3306',
         'CHARSET': os.environ.get('MYSQL_CHARSET'),
+        'TEST': {
+            'NAME': 'test_mydjangoapp'
+        }
     }
 }
 

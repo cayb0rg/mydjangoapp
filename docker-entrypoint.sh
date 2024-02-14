@@ -9,11 +9,17 @@ then
     echo "MySQL started"
 fi
 
-echo "Appling database migrations..."
-python manage.py makemigrations polls
+echo "Current directory contents: "
+ls -la
 
-python manage.py sqlmigrate polls 0001
+echo "Making database migrations..."
+python manage.py makemigrations
 
+echo "Applying database migrations..."
+python manage.py migrate
+
+echo "Starting server..."
+python manage.py runserver 0.0.0.0:8000
 
 exec "$@"
 
