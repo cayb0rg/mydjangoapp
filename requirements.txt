@@ -5,3 +5,4 @@ sqlparse==0.4.4
 mysqlclient==2.2.0
 mysql-connector-python==8.0.12
 django-extensions==3.2.3
+django-storages[s3]==1.14.2
