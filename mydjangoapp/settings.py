@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages', # A messaging framework
     'django.contrib.staticfiles', # A framework for managing static files
     'polls.apps.PollsConfig', # The polls app,
+    'materia.apps.MateriaConfig', # The materia app,
     'django_extensions', # django-extensions is a collection of custom extensions for the Django Framework
 ]
 

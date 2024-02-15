@@ -1,0 +1,15 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
+{% if widget_list %}
+    <ul>
+    {% for w in widget_list %}
+        <li>{{ w.name }}</a></li>
+        <li>{{ w.created_at }}</a></li>
+        <li>{{ w.creator }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No widgets are available.</p>
+{% endif %}

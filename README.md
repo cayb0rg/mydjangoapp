@@ -111,15 +111,15 @@ Define classes like so: `class [View](generic.[GenericViewName]`. Must provide t
 Can subclass built in generic views, like TemplateView, DetailView, ListView, RedirectView
 - Arguments passed to `as_view()` override the attributes set on the class
 
-Jacob Kaplan-Moss, one of Django’s original developers, says “Code without tests is broken by design.”
-
-`Client` tests code at the view level as a user would
-
 ## Testing Principles
 
 - Create a separate TestClass for each model or view
 - Create a separate test method for each set of conditions you want to test
 - Use test method name to describe their function
+
+Jacob Kaplan-Moss, one of Django’s original developers, says “Code without tests is broken by design.”
+
+`Client` tests code at the view level as a user would
 
 ## Static Files
 
